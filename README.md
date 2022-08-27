@@ -1,1 +1,1 @@
-https://dashboard.heroku.com/apps/phoneagenda/
+https://phoneagenda.herokuapp.com/
