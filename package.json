@@ -10,7 +10,8 @@
     "build:ui": "rm -rf build && cd ../2.20/ && npm run build --prod && cp -r build ../ejercicios/",
     "deploy": "git push heroku master",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && npm run deploy",
-    "logs:prod": "heroku logs --tail"
+    "logs:prod": "heroku logs --tail",
+    "lint": "eslint ."
   },
   "author": "Nicolas Vera",
   "license": "ISC",
@@ -23,6 +24,7 @@
     "morgan": "^1.10.0"
   },
   "devDependencies": {
+    "eslint": "^8.23.1",
     "nodemon": "^2.0.19"
   }
 }
